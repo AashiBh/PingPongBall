@@ -1,0 +1,62 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ping Pong</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+</head>
+
+<body background="bg.jpg">
+  <span>
+    <label style="font-family: 'Sansita Swashed', cursive; color:rgb(255, 255, 255); font-size: 48px;">AI Ping Pong</label>
+    <button
+      style="float: right; background-color: rgb(175, 186, 238); color: black; margin-top: 30px; font-size: 20px; margin-right: 30px; font-family: 'Roboto Slab', serif;"
+      data-toggle="modal" data-target="#modal">Instructions</button>
+  </span>
+  <button onclick="Start()" style="background-color:rgb(152, 152, 252); color: white;">Play</button><button onclick="Restart()" style="background-color: paleturquoise; color: black; margin-left: 20px;">Restart</button>
+  <div id="canvas" >
+
+  </div>
+  <div id="game_console">
+
+  </div>
+
+  <h4 id="footer">
+    Made by Serina and Ping Pong
+  </h4>
+  <div id="modal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">&times;</button>
+          <h4>Instructions</h4>
+        </div>
+        <br>
+        <br>
+        <h4 style="font-size: 23px; margin-left: 20px;">Just move your wrist</h4>
+      </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
